@@ -11,3 +11,26 @@
 .ceoMessageDiv h2 {
     text-align: center;
 }
+
+.ceoImageDiv img {
+    width: 30%;
+    height: 50%;
+    margin: 4% -1000px 0px 18%;
+    float: left;
+    box-shadow: 0px 0px 21px rgb(79, 78, 78);
+    border-radius: 10px;
+}
+
+.ceoSideTextDiv {
+    margin: 4% 15% 21px;
+    float: right;
+    max-width: 400px;
+    font-size: large;
+}
+
+.ceoBottomTextDiv {
+    display: inline-block;
+    max-width: 67.5%;
+    margin: 1.5% 0px 5% 18%;
+    font-size: large;
+}
