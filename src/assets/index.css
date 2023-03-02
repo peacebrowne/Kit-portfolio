@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ceoMessageDiv {
+    margin: 21px;
+}
+
+.ceoMessageDiv h2 {
+    text-align: center;
+}
