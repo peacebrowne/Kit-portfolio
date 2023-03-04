@@ -297,9 +297,84 @@ nav button:hover,
     right: 3rem;
 }
 
- .dots{
-    width: 10rem;
-    height: 10rem;
+footer{
+    padding: 0 2rem 0 2rem;
+    background-color: #ee6628;
+}
+
+.social-links{
+    padding: 2rem;
+    display: flex;
+    background-color: white;
+}
+.social-links h3{
+    margin-right: auto;
+    font-weight: 400;
+}
+
+.social-icons{
+    width: 2rem;
+    height: 2rem;
     margin: 0 0.5rem;
-    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.facebook{
+    background-color: #3B5998;
+}
+.twitter{
+    background-color: #00ACED;
+}
+.linkin{
+    background-color: #007BB6;
+}
+.instagram{
+    background-color: #EA2C59;
+}
+.youtube{
+    background-color: #A82400;
+}
+
+.footer-info{
+    padding: 3rem;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.footer-logo h4{
+    margin: 0.5rem 0;
+    color: white;
+    font-weight: 400;
+}
+
+.footer-logo img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.footer-nav ul li a{
+    color: white;
+}
+
+.copy-right{
+    padding: 1rem;
+    background-color: white;
+    text-align: center;
+}
+
+.copy-right h6{
+    font-weight: 300;
 }
