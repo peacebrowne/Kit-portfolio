@@ -121,8 +121,10 @@ nav button:hover,
     display: flex;
     justify-content: center;
 }
-.ceo-msg h2{
+.title{
     font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .msg-info p , .msg-info h5{
@@ -241,4 +243,64 @@ nav button:hover,
 .about-info a:hover{
     border-bottom: 1px solid #ee6628;
     font-weight: 400;
+}
+
+.partners-section{
+    padding: 4rem;
+    position: relative;
+}
+
+.partner-logo{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem 0 2rem 0;
+}
+
+.partners-div{
+    box-shadow: 0px 0px 2px 3px #ee67284f;
+    width: 8rem;
+    height: 7rem;
+    background-color: #ee6628;
+}
+
+.partners-div img{
+    width: 100%;
+    height: 100%;
+}
+
+.periods{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.angle{
+    position: absolute;
+    padding: 1rem;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    color: #898989;
+}
+
+.angle:hover{
+    color: black;
+}
+
+.left{
+    left: 3rem;
+}
+
+.right{
+    right: 3rem;
+}
+
+ .dots{
+    width: 10rem;
+    height: 10rem;
+    margin: 0 0.5rem;
+    color: green;
 }
