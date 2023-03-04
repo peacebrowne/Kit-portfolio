@@ -1,0 +1,380 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&family=Poppins:wght@100;200;300;400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+header{
+    display: flex;
+    padding: 2rem 4rem 1rem 4rem;
+    justify-content: space-between;
+}
+
+.hero{
+    padding: 2rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    min-height:100%;
+    background:linear-gradient(0deg, rgba(8, 8, 8, 0.3), rgba(8, 5, 7, 0.685)), url("../images/pexels-buro-millennial-1438081.jpg");
+    background-size:cover;
+    background-position: center 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1{
+    width: 50%;
+    text-align: center;
+    color: #ee6628;
+   font-size: 4rem;
+   font-weight: 400;
+   font-family: 'Fira Code', monospace !important;
+}
+
+.hero h3{
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: white;
+}
+
+.hero button{
+    margin: 1rem 0;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    /* background-color: orangered; */
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    font-size: small;
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.active{
+    color: #ee6628;
+    font-weight: 700;
+}
+nav button,
+.hero button{
+    padding: 0.6rem 1.2rem;
+    border: 1px solid #ee6628;
+    text-transform: capitalize;
+    border-radius: 5px;
+    background-color: #ee6628;
+    color: white;
+    cursor: pointer;
+}
+
+nav button:hover,
+.hero button:hover{
+    background-color: white;
+    color: #ee6628;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.ceo-msg{
+    padding: 5rem 3rem 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.msg-info{
+    padding: 2rem 4rem;
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+.title{
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.msg-info p , .msg-info h5{
+    padding: 0 4rem;
+    margin: 1rem;
+    line-height: 1.7rem;
+}
+
+.msg-info p{
+    color: #898989;
+}
+
+.msg-info h5{
+    font-weight: 700;
+    font-family: 'Fira Code', monospace !important;
+    font-size: larger;
+    padding-top: 2rem;
+}
+
+.msg-info h3 {
+    padding: 0 4rem;
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 1rem;
+    font-family: 'Fira Code', monospace !important;
+}
+
+.info{
+    padding: 1rem 4rem;
+}
+
+.msg-info h4{
+    padding: 0 5rem;
+    font-weight: 400;
+}
+
+.about-section{
+    padding: 7rem 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-info{
+    width: 20rem;
+    height: 23rem;
+    padding: 2rem;
+    border: 1px solid #898989;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.progress-section{
+    padding: 7rem 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.progress-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-div h3{
+    font-size: 3rem;
+    color: #ee6628;
+}
+
+.progress-div h4{
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+
+.about-info p{
+    font-size: small;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #898989;
+}
+
+.icon-div{
+    width: 5rem;
+    height: 5rem;
+    background-color: #ee6628;
+    border-radius: 50%;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.icon-div i{
+    margin: auto;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.about-info h5{
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.about-info a{
+    font-weight: 200;
+    font-size: small;
+    color: black;
+    text-decoration: none;
+    padding: 0.3rem;
+}
+
+.about-info a:hover{
+    border-bottom: 1px solid #ee6628;
+    font-weight: 400;
+}
+
+.partners-section{
+    padding: 4rem;
+    position: relative;
+}
+
+.partner-logo{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem 0 2rem 0;
+}
+
+.partners-div{
+    box-shadow: 0px 0px 2px 3px #ee67284f;
+    width: 8rem;
+    height: 7rem;
+}
+
+.partners-div img{
+    width: 100%;
+    height: 100%;
+}
+
+.periods{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.angle{
+    position: absolute;
+    padding: 1rem;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    color: #898989;
+}
+
+.angle:hover{
+    color: black;
+}
+
+.left{
+    left: 3rem;
+}
+
+.right{
+    right: 3rem;
+}
+
+footer{
+    padding: 0 2rem 0 2rem;
+    background-color: #ee6628;
+}
+
+.social-links{
+    padding: 2rem;
+    display: flex;
+    background-color: white;
+}
+.social-links h3{
+    margin-right: auto;
+    font-weight: 400;
+}
+
+.social-icons{
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.facebook{
+    background-color: #3B5998;
+}
+.twitter{
+    background-color: #00ACED;
+}
+.linkin{
+    background-color: #007BB6;
+}
+.instagram{
+    background-color: #EA2C59;
+}
+.youtube{
+    background-color: #A82400;
+}
+
+.footer-info{
+    padding: 3rem;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.footer-logo h4{
+    margin: 0.5rem 0;
+    color: white;
+    font-weight: 400;
+}
+
+.footer-logo img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.footer-nav ul li a{
+    color: white;
+}
+
+.copy-right{
+    padding: 1rem;
+    background-color: white;
+    text-align: center;
+}
+
+.copy-right h6{
+    font-weight: 300;
+}
