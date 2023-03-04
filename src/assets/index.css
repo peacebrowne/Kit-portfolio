@@ -156,6 +156,7 @@ nav button:hover,
 
 .msg-info h4{
     padding: 0 5rem;
+    font-weight: 400;
 }
 
 .about-section{
@@ -176,6 +177,31 @@ nav button:hover,
     justify-content: space-evenly;
     align-items: center;
 }
+
+.progress-section{
+    padding: 7rem 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.progress-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-div h3{
+    font-size: 3rem;
+    color: #ee6628;
+}
+
+.progress-div h4{
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
 
 .about-info p{
     font-size: small;
