@@ -3,9 +3,7 @@
  * @param {value} - class or id attribute value;
  * @returns {node element} - node element
  */
-const element = (value) => {
-  return document.querySelector(value);
-};
+const findEle = (value) => document.querySelector(value);
 
 /**
  * Removes a class value from an element

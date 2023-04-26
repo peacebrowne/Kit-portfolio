@@ -1,18 +1,20 @@
-// const header = element("header");
-// const hero_section = element(".hero");
-// const about_section = element(".about-section");
-// const ceo_msg_section = element(".ceo-msg");
-// const partners_section = element(".partners-section");
-// const progress_section = element(".progress-section");
+document.addEventListener("click", (event) => {
+  const targetEle = event.target;
+  const targetEleClas = Array.from(targetEle.classList);
 
-// /**
-//  * Set nav bar to fixed position when the page scrolls to the top
-//  * @returns {void} - node element
-//  */
-// const sticky_header = () => {
-//   if (window.pageYOffset > hero_section.offsetTop)
-//     add_class(header, default_class.sticky);
-//   else remove_class(header, default_class.sticky);
-// };
+  if (targetEleClas.includes("angle")) carousal(targetEle, targetEleClas);
+});
 
-// onscroll = () => sticky_header();
+let currentPosition = 0;
+
+function carousal(targetEle, targetEleClas) {
+  const sliders = targetEle
+    .closest(".hero-section")
+    .querySelectorAll(".hero-container");
+
+  toggle_class(sliders[0], slideRight);
+}
+
+function slideLeft() {}
+
+function slideRight() {}

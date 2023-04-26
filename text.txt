@@ -1,0 +1,40 @@
+document.addEventListener("click", (event) => {
+  const targetEle = event.target;
+  const targetEleClas = Array.from(targetEle.classList);
+
+  if (targetEleClas.includes("angle")) carousal(targetEle, targetEleClas);
+});
+
+let currentPosition = 0;
+
+function carousal(targetEle, targetEleClas) {
+  const sliders = targetEle
+    .closest(".hero-section")
+    .querySelectorAll(".hero-container");
+
+  let activeEle;
+  let clas;
+
+  if (targetEleClas.includes("left-arrow")) {
+    if (currentPosition === 0) {
+      currentPosition = sliders.length - 1;
+      activeEle = sliders[currentPosition];
+    } else {
+      activeEle = sliders[--currentPosition];
+    }
+    clas = "slide-left";
+  } else {
+    if (currentPosition === sliders.length - 1) {
+      currentPosition = 0;
+      activeEle = sliders[currentPosition];
+    } else {
+      activeEle = sliders[++currentPosition];
+    }
+    clas = "slide-right";
+  }
+  toggle_class(activeEle, clas);
+}
+
+function slideLeft() {}
+
+function slideRight() {}
