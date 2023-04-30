@@ -58,7 +58,6 @@ header {
   align-items: center;
   transform-origin: 0 0;
   visibility: hidden;
-  animation: fade-in 2s ease-in-out forwards;
   position: absolute;
 }
 
@@ -80,15 +79,6 @@ header {
   visibility: visible;
 }
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .hero-container h1,
 .hero-container h3,
 .hero-container button {
@@ -108,9 +98,11 @@ header {
 }
 
 .hero-text {
+  width: 70%;
   font-size: 1.5rem;
   font-weight: 200;
   margin: 1rem 0;
+  text-align: center;
   color: var(--color-white);
   z-index: 1;
   opacity: 0;
@@ -171,6 +163,8 @@ nav ul li a {
   color: var(--header-txt);
   text-decoration: none;
   text-transform: capitalize;
+
+  padding: 0.5rem;
 }
 
 nav ul li a:hover {
@@ -585,7 +579,6 @@ footer {
   height: 400px;
   overflow: hidden;
   position: relative;
-  background-color: red;
 }
 .carousel-items {
   width: 400%;
@@ -660,7 +653,7 @@ footer {
 }
 
 /* MOBILE VIEW */
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 800px) {
   header {
     padding: 0rem 2rem;
   }
@@ -696,6 +689,12 @@ footer {
   nav ul li {
     margin: 0.5rem 0;
     padding: 0.5rem;
+    width: auto;
+    display: flex;
+  }
+
+  nav ul li a {
+    width: 100%;
   }
 
   nav ul li a:hover {
@@ -710,9 +709,11 @@ footer {
     font-size: 2rem;
     width: 100%;
   }
+
   .hero-container h3 {
     font-size: 1rem;
   }
+
   .social-links {
     display: block;
   }

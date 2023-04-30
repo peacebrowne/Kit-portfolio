@@ -77,3 +77,7 @@ function slideUp(currentSlide) {
 }
 
 slideUp(heroSlider[0]);
+
+setInterval(() => {
+  carousal("right");
+}, 5000);
