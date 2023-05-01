@@ -16,7 +16,7 @@
   --color-orange: #ee6628;
   --color-gray-semidark: #a0a0a0;
   --color-gray-darker: #313131;
-  --color-orange-shadow: #356289;
+  --color-orange-shadow: var(--color-orange);
   --color-transparent: transparent;
 
   /* Background colors */
@@ -180,7 +180,7 @@ nav .fa-bars {
 }
 
 .active {
-  color: var(--color-orange);
+  color: var(--color-orange) !important;
   font-weight: 700;
 }
 
@@ -450,7 +450,7 @@ p {
 
 footer {
   padding: 0 2rem 0 2rem;
-  background-color: var(--color-orange);
+  background-color: #0d111d;
 }
 
 .social-links {
@@ -532,7 +532,7 @@ footer {
 
 .bg-overlay {
   padding: 0 4rem;
-  background-color: #305c7d;
+  background-color: #0d111d;
   display: flex;
   place-items: center;
   justify-content: space-between;

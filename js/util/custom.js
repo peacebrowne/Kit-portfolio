@@ -35,3 +35,9 @@ const show_ele = (ele, val) => (ele.style.display = val);
  * @param {ele} - Query the DOM for specified element and make it hidden.
  */
 const hide_ele = (ele, val) => (ele.style.display = val);
+
+const reset = (form) => {
+  form.forEach((input) => {
+    input.value = "";
+  });
+};
